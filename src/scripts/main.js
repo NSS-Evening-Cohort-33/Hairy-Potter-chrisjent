@@ -1,7 +1,7 @@
 // Imports go first
 const {makePottery} = require('./PotteryWheel.js'); 
-
 const {firePottery} = require ('./Kiln.js')
+const {toSellOrNotToSell, usePottery} = require('./PotteryCatalog.js')
 
 
 // Make 5 pieces of pottery at the wheel
@@ -23,13 +23,17 @@ let saucerFired = firePottery(saucer, 1500)
 let bowlFired = firePottery(bowl, 300)
 let cupFired = firePottery(cup, 2100)
 
-console.log(mugFired)
-console.log(plateFired)
-console.log(saucerFired)
-console.log(bowlFired)
-console.log(cupFired)
+// console.log(mugFired)
+// console.log(plateFired)
+// console.log(saucerFired)
+// console.log(bowlFired)
+// console.log(cupFired)
 // Determine which ones should be sold, and their price
-
+toSellOrNotToSell(mug)
+toSellOrNotToSell(plate)
+toSellOrNotToSell(saucer)
+toSellOrNotToSell(bowl)
+toSellOrNotToSell(cup)
 
 // Invoke the component function that renders the HTML list
 
