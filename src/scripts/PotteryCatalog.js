@@ -1,6 +1,6 @@
 let potteryToSell = [];
 
-const toSellOrNotToSell = (pottery) => {
+export const toSellOrNotToSell = (pottery) => {
     if (pottery.cracked === false) {
         if (pottery.weight >= 6) {
             pottery.price = 40
@@ -14,10 +14,10 @@ const toSellOrNotToSell = (pottery) => {
     }
 }
 
-const usePottery = () => {
+export const usePottery = () => {
     return structuredClone(potteryToSell)
 }
+console.log(usePottery)
 
 
-
-module.exports = {toSellOrNotToSell, usePottery }
+//module.exports = {toSellOrNotToSell, usePottery }
